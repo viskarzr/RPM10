@@ -38,13 +38,13 @@
             <Label Content="Возраст:"/>
             <TextBox x:Name="tbAge" TextWrapping="Wrap" Width="300"/>
             <Button x:Name="btnAdd" Content="Добавить" Margin="0,20,0,0" HorizontalAlignment="Center" Width="300" Click="btnAdd_Click"/>
-            <Button x:Name="btnChange" Content="Изменить" Margin="0,5,0,0" HorizontalAlignment="Center" Width="300"/>
+            <Button x:Name="btnChange" Content="Изменить" Margin="0,5,0,0" HorizontalAlignment="Center" Width="300" Click="btnChange_Click"/>
         </StackPanel>
         <StackPanel Grid.Row="2">
             <Label Content="Удаление по номеру животного из списка:" FontSize="14" FontWeight="UltraBold"/>
             <Label Content="Номер в списке:"/>
             <TextBox x:Name="btnCode" TextWrapping="Wrap" Width="300" Padding="0,0,0,5"/>
-            <Button x:Name="btnDel" Content="Удалить" VerticalAlignment="Center" HorizontalAlignment="Center" Width="300"/>
+            <Button x:Name="btnDel" Content="Удалить" VerticalAlignment="Center" HorizontalAlignment="Center" Width="300" Click="btnDel_Click"/>
         </StackPanel>
     </Grid>
 </Window>

@@ -8,16 +8,17 @@ namespace RPM10
 {
     public abstract class Zoo
     {
+        public int ID { get; set; }
         public string Name { get; set; }
-        public int Age { get; set; } // сделать ограничение по возрасту и весу
+        public int Age { get; set; } 
         public double Weight { get; set; }
 
         public abstract string Animals { get; }
-        public abstract void UpdateAnimals(string name, int age, double weight);
+        public abstract void UpdateAnimals(int id,string name, int age, double weight);
 
         public override string ToString()
         {
-            return $"{Animals}: {Name}, возраст: {Age}, вес: {Weight}.";
+            return $"{Animals}:{ID} {Name}, возраст: {Age}, вес: {Weight}.";
         }
     }
 
@@ -28,8 +29,9 @@ namespace RPM10
             get { return "Mлекопитающее"; }
         }
 
-        public override void UpdateAnimals(string name, int age, double weight)
+        public override void UpdateAnimals(int id, string name, int age, double weight)
         {
+            ID = id;
             Name = name;
             Age = age;
             Weight = weight;
@@ -44,8 +46,9 @@ namespace RPM10
             get { return "Парнокопытное"; }
         }
 
-        public override void UpdateAnimals(string name, int age, double weight)
+        public override void UpdateAnimals(int id, string name, int age, double weight)
         {
+            ID = id;
             Name = name;
             Age = age;
             Weight = weight;
@@ -59,8 +62,9 @@ namespace RPM10
             get { return "Птица"; }
         }
 
-        public override void UpdateAnimals(string name, int age, double weight)
+        public override void UpdateAnimals(int id, string name, int age, double weight)
         {
+            ID = id;
             Name = name;
             Age = age;
             Weight = weight;
